@@ -12,7 +12,7 @@ window.title("Dice Roller")
 dice_list = []
 
 for i in range(1, 7):
-    img = tk.PhotoImage(file=f"Assets/dice_{i}.png").subsample(5, 5)
+    img = tk.PhotoImage(file=f"dice_{i}.png").subsample(5, 5)
     dice_list.append(img)
 
 # GUI
@@ -30,3 +30,4 @@ def roll_dice():
 roll_dice()  # initial roll
 
 window.mainloop()
+
